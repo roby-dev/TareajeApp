@@ -1,0 +1,32 @@
+﻿@page "/"
+@inject IAuthService authService
+@inject NavigationManager navigationService
+@inject SweetAlertService swal;
+
+<h3>Mapa</h3>
+
+@if(authenticatedUser != null){
+    <MapComponent />
+}
+
+@code {
+    Usuario authenticatedUser;
+    protected async override Task OnInitializedAsync() {
+        authenticatedUser = await authService.isLogged();
+        if (authenticatedUser == null) {
+            navigationService.NavigateTo("/login");
+            return;
+        }
+
+        string key = Preferences.Get(PreferencesModel._keyPreferences, "");
+        var existsKey = !string.IsNullOrEmpty(key);
+        var isValidKey = await authService.isValidKey(key);
+        if (existsKey && isValidKey) {
+            
+        } else {
+            navigationService.NavigateTo("/key");
+            return;
+        }
+
+    }
+}

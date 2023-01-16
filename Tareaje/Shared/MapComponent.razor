@@ -1,0 +1,176 @@
+﻿@inject IOfficeService officeService;
+
+<TelerikLoaderContainer Visible="@(showLoader)">
+    <Template>
+        <TelerikLoader Size="@ThemeConstants.Loader.Size.Large"
+                       ThemeColor="@ThemeConstants.Loader.ThemeColor.Info"
+                       Type="@LoaderType.InfiniteSpinner" />
+        <div>
+            <span>Obteniendo ubicación</span>
+        </div>
+    </Template>
+</TelerikLoaderContainer>
+
+@if (!buttonEnabled) {
+    <div class="alert alert-danger">
+        No es posible realizar su marcaje, debe estar a menos de <code>@range</code> metros.
+    </div>
+} else {
+    <button class="btn btn-primary btn-lg" style="width:100%">Marcar asistencia</button>
+}
+
+<div class="mt-3 mb-3">
+    <code>La distancia entre ZofraTacna y tu es de <strong>@distance</strong> metros.</code>
+</div>
+
+<button style="position:fixed;z-index:99;bottom:30px;right:30px" class="btn btn-primary" @onclick="UpdateLocation"> <span class="oi oi-map-marker"></span></button>
+
+<TelerikRootComponent>
+    <TelerikMap @ref="MapRef" Zoom="@Zoom" Center="Center" Pannable="Pannable">
+        <MapLayers>
+            <MapLayer Type="@MapLayersType.Tile"
+                      Attribution="@Attribution"
+                      Subdomains="@Subdomains"
+                      UrlTemplate="@UrlTemplate">
+            </MapLayer>
+
+            <MapLayer Type="@MapLayersType.Marker"
+                      Data="@MarkerData"
+                      LocationField="@nameof(MarkerModel.LatLng)"
+                      Shape="MapMarkersShape.Pin"
+                      TitleField="@nameof(MarkerModel.Address)">
+                <MapLayerMarkerSettings>
+                    <MapLayerMarkerSettingsTooltip>
+                        <Template>
+                            @{
+                                var dataItem = context.DataItem as MarkerModel;
+                            }
+
+                            <div>@dataItem.Address</div>
+                        </Template>
+                    </MapLayerMarkerSettingsTooltip>
+                </MapLayerMarkerSettings>
+            </MapLayer>
+
+            <MapLayer Type="@MapLayersType.Marker"
+                      Data="@OfficeData"
+                      LocationField="@nameof(MarkerModel.LatLng)"
+                      TitleField="@nameof(MarkerModel.Address)">
+                <MapLayerMarkerSettings>
+                    <MapLayerMarkerSettingsTooltip>
+                        <Template>
+                            @{
+                                var dataItem = context.DataItem as MarkerModel;
+                            }
+
+                            <div>@dataItem.Address</div>
+                        </Template>
+                    </MapLayerMarkerSettingsTooltip>
+                </MapLayerMarkerSettings>
+            </MapLayer>
+
+            <MapLayer Type="@MapLayersType.Bubble"
+                      Data="@BubbleData"
+                      LocationField="@nameof(BubbleModel.LatLng)"                      
+                      ValueField="@nameof(BubbleModel.Revenue)">
+                <MapLayerBubbleSettings>
+                    <MapLayerBubbleSettingsStyle>
+                        <MapLayerBubbleSettingsStyleFill Color="#0000ff"></MapLayerBubbleSettingsStyleFill>
+                        <MapLayerBubbleSettingsStyleStroke Color="#000000"></MapLayerBubbleSettingsStyleStroke>
+                    </MapLayerBubbleSettingsStyle>
+                </MapLayerBubbleSettings>
+            </MapLayer>
+        </MapLayers>
+    </TelerikMap>
+
+</TelerikRootComponent>
+
+
+@code {
+    public string[] Subdomains { get; set; } = new string[] { "a", "b", "c" };
+    public string UrlTemplate { get; set; } = "https://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png";
+    public string Attribution { get; set; } = "&copy; <a href='https://osm.org/copyright'>OpenStreetMap contributors</a>";
+    public double[] Center { get; set; } = new double[] { -18.007963, -70.246915 };
+
+    TelerikMap MapRef { get; set; }
+    public double Zoom { get; set; } = 14;
+    public double MinZoom { get; set; } = 14;
+
+    public List<MarkerModel> MarkerData { get; set; } = new List<MarkerModel>();
+    public List<MarkerModel> OfficeData { get; set; } = new List<MarkerModel>();
+    public List<BubbleModel> BubbleData { get; set; } = new List<BubbleModel>();
+
+    public List<OfficeModel> offices;
+
+    private CancellationTokenSource _cancelTokenSource;
+    private bool _isCheckingLocation;
+    private bool Pannable = true;
+
+    private string authentication;
+    private double range;
+
+    private double distance = 0;
+    private bool buttonEnabled = false;
+    private bool showLoader = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender) {        
+        offices = await officeService.getAll();
+            foreach (var item in offices) {
+                OfficeData.Add(new MarkerModel() {
+                        LatLng = item.LatLng,
+                        Address = item.Name,
+                    });
+                range = item.Range;
+            }
+            authentication = DeviceInfo.Name;
+            await GetMyLocation();
+    }
+
+
+    private async Task UpdateLocation() {
+
+        await GetMyLocation();
+    }
+
+    private async Task GetMyLocation() {
+        try {
+            showLoader = true;
+            _isCheckingLocation = true;
+
+            GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Best,TimeSpan.FromSeconds(2));
+
+            _cancelTokenSource = new CancellationTokenSource();
+
+            Location location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
+
+            foreach (var item in offices) {
+                distance = Location.CalculateDistance(item.Latitude,item.Longitude, location,DistanceUnits.Miles);
+                distance = Math.Round(distance * 1609.344,2);
+                buttonEnabled = distance < offices.First().Range;
+            }
+            MarkerData.Clear();
+
+            if (location != null) {         
+                MarkerData.Add(new MarkerModel() {
+                        LatLng = new double[] { location.Latitude, location.Longitude },
+                        Address = $"Mi ubicación - Dispositivo: {authentication}",
+                    });
+
+
+                Zoom = 19;
+                Center = new double []{location.Latitude, location.Longitude};
+                //Pannable = false;
+                MapRef.Refresh();             
+            }
+        } catch (Exception ex) {
+        } finally {
+            _isCheckingLocation = false;
+        }
+        showLoader = false;
+    }
+
+    public void CancelRequest() {
+        if (_isCheckingLocation && _cancelTokenSource != null && _cancelTokenSource.IsCancellationRequested == false)
+            _cancelTokenSource.Cancel();
+    }
+}

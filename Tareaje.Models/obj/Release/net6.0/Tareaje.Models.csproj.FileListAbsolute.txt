@@ -1,0 +1,12 @@
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\bin\Release\net6.0\Tareaje.Models.deps.json
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\bin\Release\net6.0\Tareaje.Models.dll
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\bin\Release\net6.0\Tareaje.Models.pdb
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.csproj.AssemblyReference.cache
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.AssemblyInfoInputs.cache
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.AssemblyInfo.cs
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.csproj.CoreCompileInputs.cache
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.dll
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\refint\Tareaje.Models.dll
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\Tareaje.Models.pdb
+C:\Users\Roby\source\repos\Tareaje\Tareaje.Models\obj\Release\net6.0\ref\Tareaje.Models.dll

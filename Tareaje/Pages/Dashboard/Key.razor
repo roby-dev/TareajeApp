@@ -1,0 +1,87 @@
+﻿@layout LoginLayout
+@page "/key"
+@inject IAuthService authService
+@inject SweetAlertService swal
+@inject NavigationManager navigationService;
+
+<div class="container p-2">
+    <h3>Debe ingresar su <code>CÓDIGO DE ACTIVACIÓN</code>.</h3>
+
+
+    <EditForm Model="request" OnValidSubmit="Asignar">
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    <div class="mb-3">
+                        <InputText maxlength="100" class="form-control" @bind-Value="@request.Key" aria-describedby="key" placeholder="00000000-0000-0000-0000-000000000000" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+
+    <button class="btn btn-danger" href="#" @onclick="CerrarSesion">
+        Cerrar Sesión
+    </button>
+</div>
+
+
+@code {
+    AsignarLicenciaRequest request;    
+    protected override async Task OnInitializedAsync() {
+        request = new();
+        string userId = Preferences.Get(PreferencesModel._userPreferences, "");
+        if (String.IsNullOrEmpty(userId)) {
+            navigationService.NavigateTo("/login");
+            return;
+        }
+
+        request.UsuarioId = Convert.ToInt64(userId);
+    }
+
+    private async Task Asignar() {
+
+        var key = Preferences.Get(PreferencesModel._keyPreferences,"");
+
+        if (!string.IsNullOrEmpty(key)) {
+            SweetAlertResult _result = await swal.FireAsync(new SweetAlertOptions {
+                    Title = "Atención!",
+                    Text = "Ya hay una licencia asignada. ¿Seguro que desea cambiarla? (Al hacer esto perderá la otra licencia)",
+                    Icon = SweetAlertIcon.Warning,
+                    ShowCancelButton = true,
+                    ConfirmButtonText = "Cambiar",
+                    CancelButtonText = "Cancelar"
+                });
+
+            if (!string.IsNullOrEmpty(_result.Value)) {
+                Preferences.Remove(PreferencesModel._keyPreferences);
+                await asignarLicencia();
+            }
+            return;
+        } 
+        await asignarLicencia();               
+    }
+
+    private async Task asignarLicencia() {
+        await swal.ShowLoadingAsync();
+
+        var result = await authService.asignarKey(request);
+        if (!result.Response.status) {
+            await swal.FireAsync("Error", result.Response.message, "error");
+            return;
+        }
+
+        await swal.FireAsync("Correcto", result.Response.message, "success");
+
+        Preferences.Set(PreferencesModel._keyPreferences, request.Key);
+        navigationService.NavigateTo("/");
+        return;
+    }
+
+    private async Task CerrarSesion() {
+        Preferences.Remove(PreferencesModel._userPreferences);
+        navigationService.NavigateTo("/login");
+        return;
+    }
+}
