@@ -4,28 +4,28 @@
 @inject SweetAlertService swal
 @inject NavigationManager navigationService;
 
-<div class="container p-2">
-    <h3>Debe ingresar su <code>CÓDIGO DE ACTIVACIÓN</code>.</h3>
-
-
-    <EditForm Model="request" OnValidSubmit="Asignar">
-        <div class="card">
-            <div class="card-body">
-                <div class="container">
-                    <div class="mb-3">
-                        <InputText maxlength="100" class="form-control" @bind-Value="@request.Key" aria-describedby="key" placeholder="00000000-0000-0000-0000-000000000000" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">Acceder</button>
-                </div>
+<div class="d-flex align-items-center justify-content-center" style="height:100vh;">
+    <div class="col-lg-5 col-md-7 col-sm-12  w-100 p-2">
+        <h3 class="text-center"><code>CÓDIGO DE ACTIVACIÓN</code>.</h3>
+        <EditForm Model="request" OnValidSubmit="Asignar">
+            <div class="container">
+                
+                        <div class="mb-3">
+                            <InputText maxlength="100" class="form-control text-center" @bind-Value="@request.Key" aria-describedby="key" placeholder="00000000-0000-0000-0000-000000000000" />
+                        </div>
+                        <div class="d-flex gap-1">
+                            <button type="submit" class="btn btn-primary w-50">Acceder</button>
+                            <button type="button" class="btn btn-danger w-50" @onclick="CerrarSesion">
+                                Salir
+                            </button>
+                        </div>
+                
             </div>
-        </div>
-    </EditForm>
+        </EditForm>
 
-    <button class="btn btn-danger w-100 mt-2" href="#" @onclick="CerrarSesion">
-        Cerrar Sesión
-    </button>
+       
+    </div>
 </div>
-
 
 @code {
     AsignarLicenciaRequest request;    

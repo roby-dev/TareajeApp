@@ -22,3 +22,15 @@ D:\salvado\Aplicaciones_Web\TareajeApp\Models\obj\Release\net6.0\Models.dll
 D:\salvado\Aplicaciones_Web\TareajeApp\Models\obj\Release\net6.0\refint\Models.dll
 D:\salvado\Aplicaciones_Web\TareajeApp\Models\obj\Release\net6.0\Models.pdb
 D:\salvado\Aplicaciones_Web\TareajeApp\Models\obj\Release\net6.0\ref\Models.dll
+C:\Users\Roby\source\repos\TareajeApp\Models\bin\Release\net6.0\Models.deps.json
+C:\Users\Roby\source\repos\TareajeApp\Models\bin\Release\net6.0\Models.dll
+C:\Users\Roby\source\repos\TareajeApp\Models\bin\Release\net6.0\Models.pdb
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.AssemblyInfo.cs
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.dll
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\refint\Models.dll
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\Models.pdb
+C:\Users\Roby\source\repos\TareajeApp\Models\obj\Release\net6.0\ref\Models.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4//T6nvajBtyoVnjSPMkMIWdEsovoX8MO0Nrce0oFrQ=",
+  "Hash": "c7XbxU541qUwBzl6bfKye4m+OJkXD9I7FGty5L251jc=",
   "Source": "Tareaje",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,7 +10,7 @@
     {
       "Name": "Tareaje\\wwwroot",
       "Source": "Tareaje",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "C:\\Users\\Roby\\.nuget\\packages\\telerik.ui.for.blazor\\3.6.0\\staticwebassets\\js\\telerik-blazor.js"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Tareaje.styles.css",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Tareaje.styles.css",
       "SourceId": "Tareaje",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "Tareaje.styles.css",
       "AssetKind": "All",
@@ -728,13 +728,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Tareaje.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Tareaje.styles.css"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Tareaje.bundle.scp.css",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Tareaje.bundle.scp.css",
       "SourceId": "Tareaje",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "Tareaje.bundle.scp.css",
       "AssetKind": "All",
@@ -745,13 +745,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Tareaje.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\Tareaje.bundle.scp.css"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\app.css",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\favicon.ico",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\index.html",
       "SourceId": "Tareaje",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",

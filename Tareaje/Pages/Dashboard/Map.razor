@@ -3,13 +3,22 @@
 @inject NavigationManager navigationService
 @inject SweetAlertService swal;
 
-<h3>Mapa</h3>
 
 @if(authenticatedUser != null){
+    <h3>Mapa</h3>
     <MapComponent />
+} else {
+    <TelerikLoaderContainer Visible="@(loading)">
+        <Template>
+            <TelerikLoader Size="@ThemeConstants.Loader.Size.Large"
+                       ThemeColor="@ThemeConstants.Loader.ThemeColor.Info"
+                       Type="@LoaderType.InfiniteSpinner" />            
+        </Template>
+    </TelerikLoaderContainer>
 }
 
 @code {
+    bool loading = true;
     Usuario authenticatedUser;
     protected async override Task OnInitializedAsync() {
         authenticatedUser = await authService.isLogged();
@@ -28,5 +37,6 @@
             navigationService.NavigateTo("/key");
             return;
         }
+        loading = false;
     }
 }

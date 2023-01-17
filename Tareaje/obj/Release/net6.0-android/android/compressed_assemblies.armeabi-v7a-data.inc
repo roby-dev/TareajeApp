@@ -220,7 +220,7 @@
 
 	.type	.L.compressed_assembly_data.55, %object
 	.local	.L.compressed_assembly_data.55
-	.comm	.L.compressed_assembly_data.55, 369152, 16
+	.comm	.L.compressed_assembly_data.55, 372736, 16
 
 	.type	.L.compressed_assembly_data.56, %object
 	.local	.L.compressed_assembly_data.56

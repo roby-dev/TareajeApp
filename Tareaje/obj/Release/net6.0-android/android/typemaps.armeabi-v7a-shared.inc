@@ -42,53 +42,53 @@ map_aname.7:
 
 	.type	map_aname.8, %object
 map_aname.8:
-	.asciz	"Tareaje"
-	.size	map_aname.8, 8
+	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
+	.size	map_aname.8, 35
 
 	.type	map_aname.9, %object
 map_aname.9:
-	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
-	.size	map_aname.9, 35
+	.asciz	"Xamarin.AndroidX.Collection"
+	.size	map_aname.9, 28
 
 	.type	map_aname.10, %object
 map_aname.10:
-	.asciz	"Xamarin.AndroidX.Collection"
-	.size	map_aname.10, 28
+	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
+	.size	map_aname.10, 41
 
 	.type	map_aname.11, %object
 map_aname.11:
-	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
-	.size	map_aname.11, 41
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	map_aname.11, 22
 
 	.type	map_aname.12, %object
 map_aname.12:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	map_aname.12, 22
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
+	.size	map_aname.12, 30
 
 	.type	map_aname.13, %object
 map_aname.13:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	map_aname.13, 30
+	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
+	.size	map_aname.13, 37
 
 	.type	map_aname.14, %object
 map_aname.14:
-	.asciz	"Xamarin.AndroidX.Lifecycle.ViewModel"
-	.size	map_aname.14, 37
+	.asciz	"Xamarin.AndroidX.Navigation.Common"
+	.size	map_aname.14, 35
 
 	.type	map_aname.15, %object
 map_aname.15:
-	.asciz	"Xamarin.AndroidX.Navigation.Common"
-	.size	map_aname.15, 35
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	map_aname.15, 26
 
 	.type	map_aname.16, %object
 map_aname.16:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	map_aname.16, 26
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	map_aname.16, 34
 
 	.type	map_aname.17, %object
 map_aname.17:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	map_aname.17, 34
+	.asciz	"Tareaje"
+	.size	map_aname.17, 8
 
 	.type	map_aname.18, %object
 map_aname.18:

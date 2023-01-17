@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jut+a4Csck9Xy4cvRqSPbvqTFGVQiflElosTizZyvFVg+rSUIRSIaTVOIKShdDr0TsZlU3grHR6K7Si6KOY+AQ==",
+  "dgSpecHash": "X2bnsnckf2rEZORhZ2NasMUTuFrXXoy4TKBnLYI1Swrc6ZDsreBHJ8y4vSr0B8YZH5n5H7HYrEUsPS+mO1xLzw==",
   "success": true,
-  "projectFilePath": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Tareaje.Api\\Tareaje.Api.csproj",
+  "projectFilePath": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Tareaje.Api\\Tareaje.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Roby\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Roby\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

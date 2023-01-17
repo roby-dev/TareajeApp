@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DGC8JRgpznQbz43zfo3oJYJ170T8hEvtZmSzPz5jV26nnjyunUXg9awj+H1OM7GF4sf5S5/oboXu0YYokZyt0Q==",
+  "dgSpecHash": "b1gEFrQ+mFpOe0RcJFdJ5Gkv6tHwnZRalz8M1UyM+XUZXvzIIieSW9DvUQAqCheV0GJ0j6i6SGBUSYxfhHXjKA==",
   "success": true,
-  "projectFilePath": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\Models.csproj",
+  "projectFilePath": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

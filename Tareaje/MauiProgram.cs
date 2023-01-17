@@ -7,7 +7,7 @@ using Tareaje.Services;
 namespace Tareaje;
 
 public static class MauiProgram {
-	private static readonly string backendURL = @"https://29b9-187-86-166-195.sa.ngrok.io/";
+	private static readonly string backendURL = @"https://10f1-200-4-245-113.sa.ngrok.io/";
 	//private static readonly string backendURL = @"http://localhost:5214/";
 	public static MauiApp CreateMauiApp()
 	{
