@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\Models.csproj": {}
+    "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\Models.csproj": {
+    "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\Models.csproj",
+        "projectPath": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roby\\source\\repos\\Tareaje\\Models\\obj\\",
+        "outputPath": "D:\\salvado\\Aplicaciones_Web\\TareajeApp\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -5,26 +5,29 @@
 @inject NavigationManager navigationService
 @inject SweetAlertService swal;
 
-<EditForm Model="auth" OnValidSubmit="login">
-    <div class="card">
-        <div class="card-header">Acceder al Sistema</div>
-        <div class="card-body">
-            <div class="container">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <InputText class="form-control" @bind-Value="@auth.user" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">No compartiremos tu email con nadie mas.</div>
+<div class="d-flex align-items-center justify-content-center" style="height:100vh;">
+    <div class="col-lg-4 col-md-7 col-sm-12">
+        <EditForm Model="auth" OnValidSubmit="login">
+            <div class="card">
+                <div class="card-header">Acceder al Sistema</div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <InputText class="form-control" @bind-Value="@auth.user" aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">No compartiremos tu email con nadie mas.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <InputText type="password" class="form-control" @bind-Value="@auth.password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Acceder</button>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <InputText type="password" class="form-control" @bind-Value="@auth.password" />
-                </div>
-                <button type="submit" class="btn btn-primary">Acceder</button>
             </div>
-        </div>
+        </EditForm>
     </div>
-
-</EditForm>
+</div>
 
 @code {
     Auth auth;

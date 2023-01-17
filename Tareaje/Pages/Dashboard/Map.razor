@@ -19,14 +19,14 @@
         }
 
         string key = Preferences.Get(PreferencesModel._keyPreferences, "");
-        var existsKey = !string.IsNullOrEmpty(key);
-        var isValidKey = await authService.isValidKey(key);
-        if (existsKey && isValidKey) {
-            
-        } else {
+        if (string.IsNullOrEmpty(key)) {
             navigationService.NavigateTo("/key");
             return;
         }
 
+        if (!await authService.isValidKey(key)) {
+            navigationService.NavigateTo("/key");
+            return;
+        }
     }
 }

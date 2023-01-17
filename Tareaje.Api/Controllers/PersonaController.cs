@@ -19,10 +19,11 @@ namespace Tareaje.Api.Controllers {
 
         [HttpPost()]
         public async Task<IActionResult> CreatePersona([FromBody] Persona persona) {
-            if (!await personaDA.CreatePersona(persona))
+            var newPersona = await personaDA.CreatePersona(persona);
+            if(newPersona.Id == 0)
                 return Problem("No se pudo agregar persona");
 
-            return Ok("Persona agregada correctamente");
+            return Ok(newPersona);
         }
     }
 }

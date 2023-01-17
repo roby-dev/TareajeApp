@@ -62,7 +62,7 @@
 		<AndroidKeyStore>True</AndroidKeyStore>
 		<AndroidSigningKeyStore>..\key.keystore</AndroidSigningKeyStore>
 		<AndroidSigningStorePass>123456</AndroidSigningStorePass>
-		<AndroidSigningKeyAlias>MauiAlias</AndroidSigningKeyAlias>
+		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass>123456</AndroidSigningKeyPass>
 	</PropertyGroup>
 	
