@@ -1,3 +1,0 @@
-C:\Users\Roby\source\repos\Tareaje\Tareaje\bin\Release\net6.0-android\publish\com.companyname.tareaje-Signed.aab
-C:\Users\Roby\source\repos\Tareaje\Tareaje\bin\Release\net6.0-android\publish\com.companyname.tareaje.aab
-C:\Users\Roby\source\repos\Tareaje\Tareaje\bin\Release\net6.0-android\publish\com.companyname.tareaje-Signed.apk
